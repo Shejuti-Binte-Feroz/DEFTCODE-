@@ -43,14 +43,18 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li class="dropdown"><a href="#"><span>Topics</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto" href="index.html">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Data Stractures and Algorithms</a></li>
+          <li class="dropdown"><a href=""><span>Topics</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="Beginner.html">Beginner</a></li>
               <!-- <li><a href="Intermidiate.html">Intermediate</a></li> -->
-              <li><a href="Advance.html#">Advance</a></li>
+              <li><a href="Advance.html">Advance</a></li>
             </ul>
           </li>
+          <!-- <li><a class="nav-link scrollto o" href="#portfolio">Programming Languages</a></li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -75,23 +79,38 @@
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page">
-      <div class="container">
-        <p>
-          <h2>
-            Binary search is an efficient algorithm for finding an item from a sorted list of items. It works by repeatedly dividing in half the portion of the list that could contain the item, until you've narrowed down the possible locations to just one. We used binary search in the guessing game in the introductory tutorial.
+    
+
+    <section id="about-video" class="about-video">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/V_T5NuccwRA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <p class="fst-italic"></p>
+            <p>
+            <h4>
+              Binary search is an efficient algorithm for finding an item from a sorted list of items. It works by repeatedly dividing in half the portion of the list that could contain the item, until you've narrowed down the possible locations to just one. We used binary search in the guessing game in the introductory tutorial.
           Given a sorted array arr[] of n elements, write a function to search a given element x in arr[].
 A simple approach is to do a linear search. The time complexity of the above algorithm is O(n). 
 Another approach to perform the same task is using Binary Search. Search a sorted array by repeatedly dividing 
 the search interval in half. Begin with an interval covering the whole array. If the value of the search key is less 
 than the item in the middle of the interval, narrow the interval to the lower half. Otherwise, narrow it to the upper half.
  Repeatedly check until the value is found or the interval is empty.
-</h2>
-        </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/V_T5NuccwRA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </h4>
+            </p>
+          </div>
+
+        </div>
+
       </div>
     </section>
 
+    
   </main> 
   <!-- End #main -->
   <section id="contact" class="contact">

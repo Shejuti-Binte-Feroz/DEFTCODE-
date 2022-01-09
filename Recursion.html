@@ -43,14 +43,18 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li class="dropdown"><a href="#"><span>Topics</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto" href="index.html">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Data Stractures and Algorithms</a></li>
+          <li class="dropdown"><a href=""><span>Topics</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="Beginner.html">Beginner</a></li>
               <!-- <li><a href="Intermidiate.html">Intermediate</a></li> -->
-              <li><a href="Advance.html#">Advance</a></li>
+              <li><a href="Advance.html">Advance</a></li>
             </ul>
           </li>
+          <!-- <li><a class="nav-link scrollto o" href="#portfolio">Programming Languages</a></li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -75,19 +79,45 @@
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page">
-      <div class="container">
-        <p>
-          <h2>
-            In computer science, recursion is a method of solving a problem where the solution depends on solutions to smaller instances 
-            of the same problem. Such problems can generally be solved by iteration, but this needs to identify and index the smaller instances
-             at programming time.
-</h2>
-        </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/oSQbwlepoCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section id="about-video" class="about-video">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oSQbwlepoCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <p class="fst-italic"></p>
+            <p>
+            <h4>
+              The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called 
+              as recursive function. Using recursive algorithm, certain problems can be solved quite easily. 
+              Examples of such problems are Towers of Hanoi (TOH), Inorder/Preorder/Postorder Tree Traversals, DFS of
+               Graph, etc.Let us consider a problem that a programmer have to determine the sum of first n natural numbers, there are several
+                ways of doing that but the simplest approach is simply add the numbers starting from 1 to n. So the function simply looks like,
+                f(n) = 1 + 2 + 3 +……..+ n
+                but there is another mathematical approach of representing this,
+
+approach(2) – Recursive adding 
+
+f(n) = 1                  n=1
+
+f(n) = n + f(n-1)    n>1
+
+There is a simple difference between the approach (1) and
+ approach(2) and that is in approach(2) the function “ f( ) ” itself is being called inside the function, so this phenomenon is 
+ named as recursion and the function containing recursion is called recursive function, at the end this is a great tool in the hand of the
+  programmers to code some problems in a lot easier and efficient way.
+            </h4>
+            </p>
+          </div>
+
+        </div>
+
       </div>
     </section>
-
   </main> 
   <!-- End #main -->
   <section id="contact" class="contact">

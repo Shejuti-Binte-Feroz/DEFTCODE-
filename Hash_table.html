@@ -43,14 +43,18 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li class="dropdown"><a href="#"><span>Topics</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto" href="index.html">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Data Stractures and Algorithms</a></li>
+          <li class="dropdown"><a href=""><span>Topics</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="Beginner.html">Beginner</a></li>
               <!-- <li><a href="Intermidiate.html">Intermediate</a></li> -->
-              <li><a href="Advance.html#">Advance</a></li>
+              <li><a href="Advance.html">Advance</a></li>
             </ul>
           </li>
+          <!-- <li><a class="nav-link scrollto o" href="#portfolio">Programming Languages</a></li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -75,18 +79,56 @@
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page">
-      <div class="container">
-        <p>
-          <h2>
-            In computing, a hash table (hash map) is a data structure that implements an 
-            associative array abstract data type, a structure that can map keys to values. A hash table uses a hash function to compute an 
-            index, also called a hash code, into an array of buckets or slots, from which the desired value can be found.
-</h2>
-        </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KyUTuwz_b7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
+
+    <section id="about-video" class="about-video">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KyUTuwz_b7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <p class="fst-italic"></p>
+            <p>
+            <h4>
+              Hashing is a technique that is used to uniquely identify a specific object from a group of similar objects. Some examples of how hashing is used in our lives include:
+
+In universities, each student is assigned a unique roll number that can be used to retrieve information about them.
+In libraries, each book is assigned a unique number that can be used to determine information about the book, 
+such as its exact position in the library or the users it has been issued to etc.
+In both these examples the students and books were hashed to a unique number.
+
+Assume that you have an object and you want to assign a key to it to make searching easy. To store the key/value pair, 
+you can use a simple array like a data structure where keys (integers) can be used directly as an index to store values. However, in cases where the keys are large and cannot be used directly as an index, you should use hashing.
+
+In hashing, large keys are converted into small keys by using hash functions. The values are then stored in a data structure 
+called hash table. The idea of hashing is to distribute entries (key/value pairs) uniformly across an array. Each element is assigned a 
+key (converted key). By using that key you can access the element in O(1) time. Using the key, the algorithm (hash function) computes an 
+index that suggests where an entry can be found or inserted.
+
+Hashing is implemented in two steps:
+
+An element is converted into an integer by using a hash function. This element can be used as an index to store the original element, which
+ falls into the hash table.
+The element is stored in the hash table where it can be quickly retrieved using hashed key.
+
+hash = hashfunc(key)
+index = hash % array_size
+
+In this method, the hash is independent of the array size and it is then reduced to an index (a number between 0 and array_size
+ − 1) by using the modulo operator (%).
+            </h4>
+            </p>
+          </div>
+
+        </div>
+
       </div>
     </section>
+
 
   </main> 
   <!-- End #main -->

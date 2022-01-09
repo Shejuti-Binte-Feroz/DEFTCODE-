@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>DEFTCODE-Segment Tree</title>
+  <title>DEFTCODE-Game Theory</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -69,16 +69,17 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h1>Segment Tree</h1>
+          <h1>Game Theory</h1>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Segment Tree</li>
+            <li>Game Theory</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
+    
 
     <section id="about-video" class="about-video">
       <div class="container" data-aos="fade-up">
@@ -86,30 +87,22 @@
         <div class="row">
 
           <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ic7OO3Uw6J0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GPhZpgPOa1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
 
           <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
             <p class="fst-italic"></p>
             <p>
             <h4>
-              In computer science, a segment tree, also known as a statistic tree, is a tree data structure used for storing information about intervals, or segments. It allows querying which of the stored segments contain a given point. It is, in principle, a static structure; that is, it's a structure that cannot be modified once it's built. A similar data structure is the interval tree.
+              Algorithmic game theory (AGT) is an area in the intersection of game theory and computer science, with the objective of understanding and design of algorithms in strategic environments.
 
-A segment tree for a set I of n intervals uses O(n log n) storage and can be built in O(n log n) time. Segment trees support searching for all the intervals that contain a query point in time O(log n + k), k being the number of retrieved intervals or segments.[1]
-
-Applications of the segment tree are in the areas of computational geometry, geographic information systems and machine learning.
-
-The segment tree can be generalized to higher dimension spaces.This section describes the structure of a segment tree in a one-dimensional space.
-A segment tree from the set of segments I, can be built as follows. First, the endpoints of the intervals in I are sorted. The elementary 
-intervals are obtained from that. Then, a balanced binary tree is built on the elementary intervals, and for each node v it is determined the
- interval Int(v) it represents. It remains to compute the canonical subsets for the nodes. To achieve this, the intervals in I are inserted one
-  by one into the segment tree. An interval X = [x, x′] can be inserted in a subtree rooted at T, using the following procedure:
-
-If Int(T) is contained in X then store X at T, and finish.
-Else:
-If X intersects the interval of the left child of T, then insert X in that child, recursively.
-If X intersects the interval of the right child of T, then insert X in that child, recursively.
-The complete construction operation takes O(n log n) time, n being the number of segments in I.
+              Typically, in Algorithmic Game Theory problems, the input to a given algorithm is distributed among many players 
+              who have a personal interest in the output. In those situations, the agents might not report the input truthfully because of 
+              their own personal interests. We can see Algorithmic Game Theory from two perspectives:
+              
+              Analysis: given the currently implemented algorithms, analyze them using Game Theory tools (e.g., calculate and prove properties on their Nash equilibria, price of anarchy, and best-response dynamics)
+              Design: design games that have both good game-theoretical and algorithmic properties. This area is called algorithmic mechanism design.
+              On top of the usual requirements in classical algorithm design (e.g., polynomial-time running time, good approximation ratio), the designer must also care about incentive constraints.
             </h4>
             </p>
           </div>
@@ -119,8 +112,7 @@ The complete construction operation takes O(n log n) time, n being the number of
       </div>
     </section>
 
-
-
+    
   </main> 
   <!-- End #main -->
   <section id="contact" class="contact">

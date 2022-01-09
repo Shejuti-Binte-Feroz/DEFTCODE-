@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>DEFTCODE-Segment Tree</title>
+  <title>DEFTCODE-LOOP</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -69,16 +69,17 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h1>Segment Tree</h1>
+          <h1>Loop</h1>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Segment Tree</li>
+            <li>Loop</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
+    
 
     <section id="about-video" class="about-video">
       <div class="container" data-aos="fade-up">
@@ -86,30 +87,34 @@
         <div class="row">
 
           <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ic7OO3Uw6J0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2kuf1VrxotM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
           <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
             <p class="fst-italic"></p>
             <p>
             <h4>
-              In computer science, a segment tree, also known as a statistic tree, is a tree data structure used for storing information about intervals, or segments. It allows querying which of the stored segments contain a given point. It is, in principle, a static structure; that is, it's a structure that cannot be modified once it's built. A similar data structure is the interval tree.
+              There may be a situation, when you need to execute a block of code several number of times.
+              In general, statements are executed sequentially: The first statement in a function is executed first, followed by the
+              second, and so on.
+              
+              Programming languages provide various control structures that allow for more complicated execution paths.
+              
+              A loop statement allows us to execute a statement or group of statements
+              multiple times and following is the general from of a loop statement in most of the programming languages −
+              C++ programming language provides the following type of loops to handle looping requirements.
 
-A segment tree for a set I of n intervals uses O(n log n) storage and can be built in O(n log n) time. Segment trees support searching for all the intervals that contain a query point in time O(log n + k), k being the number of retrieved intervals or segments.[1]
-
-Applications of the segment tree are in the areas of computational geometry, geographic information systems and machine learning.
-
-The segment tree can be generalized to higher dimension spaces.This section describes the structure of a segment tree in a one-dimensional space.
-A segment tree from the set of segments I, can be built as follows. First, the endpoints of the intervals in I are sorted. The elementary 
-intervals are obtained from that. Then, a balanced binary tree is built on the elementary intervals, and for each node v it is determined the
- interval Int(v) it represents. It remains to compute the canonical subsets for the nodes. To achieve this, the intervals in I are inserted one
-  by one into the segment tree. An interval X = [x, x′] can be inserted in a subtree rooted at T, using the following procedure:
-
-If Int(T) is contained in X then store X at T, and finish.
-Else:
-If X intersects the interval of the left child of T, then insert X in that child, recursively.
-If X intersects the interval of the right child of T, then insert X in that child, recursively.
-The complete construction operation takes O(n log n) time, n being the number of segments in I.
+              1	while loop
+              Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body.
+              
+              2	for loop
+              Execute a sequence of statements multiple times and abbreviates the code that manages the loop variable.
+              
+              3	do...while loop
+              Like a ‘while’ statement, except that it tests the condition at the end of the loop body.
+              
+              4	nested loops
+              You can use one or more loop inside any another ‘while’, ‘for’ or ‘do..while’ loop.
             </h4>
             </p>
           </div>
@@ -119,8 +124,7 @@ The complete construction operation takes O(n log n) time, n being the number of
       </div>
     </section>
 
-
-
+    
   </main> 
   <!-- End #main -->
   <section id="contact" class="contact">
